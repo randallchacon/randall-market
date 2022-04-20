@@ -1,10 +1,6 @@
 package com.randall.market.persistence.entity;
 
-import com.sun.xml.bind.v2.util.QNameMap;
-import org.springframework.context.annotation.EnableMBeanExport;
-
 import javax.persistence.*;
-import javax.xml.namespace.QName;
 
 @Entity
 @Table(name = "compras_productos")

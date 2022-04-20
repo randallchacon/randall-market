@@ -1,4 +1,4 @@
-package com.randall.market.persistence.entity.crud;
+package com.randall.market.persistence.crud;
 
 import com.randall.market.persistence.entity.Producto;
 import org.springframework.data.repository.CrudRepository;
