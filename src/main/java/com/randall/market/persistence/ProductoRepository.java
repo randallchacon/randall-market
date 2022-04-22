@@ -5,6 +5,7 @@ import com.randall.market.domain.repository.ProductRepository;
 import com.randall.market.persistence.crud.ProductoCrudRepository;
 import com.randall.market.persistence.entity.Producto;
 import com.randall.market.persistence.mapper.ProductMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -12,7 +13,9 @@ import java.util.Optional;
 
 @Repository //@Component is also valid, but is more general than repository
 public class ProductoRepository implements ProductRepository {
+    @Autowired //debo estar seguro que el objeto a inyectar es un componente de spring
     private ProductoCrudRepository productoCrudRepository;
+    @Autowired //inyeccion de dependencias con spring
     private ProductMapper mapper;
     @Override
     public List<Product> getAll(){
