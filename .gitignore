@@ -1,6 +1,5 @@
 #Mis archivos
 /src/main/resources/application-dev.properties
-/src/main/resources/application-pdn.properties
 
 HELP.md
 .gradle
