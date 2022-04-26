@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-@Service //podría tambien usarse un @component
+@Service //podría tambien usarse un @component, pero agrega una diferenciacion semantica de q es esta clase
 public class ProductService {
     @Autowired
     private ProductRepository productRepository;
